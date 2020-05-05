@@ -1,0 +1,202 @@
+
+body{
+    width: 100%;
+    height: auto;   
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/*-------*/
+/*header*/
+/*-------*/
+
+/*H1*/
+h1{
+    display: none;
+}
+
+/*Logo ohmyfood*/
+.logo{
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-------*/
+/*Footer*/
+/*-------*/
+
+footer div{   
+    &:hover{            /*animation mentions légales + contact*/       
+    animation: infinite thing 700ms;  }
+}
+
+
+@keyframes thing {               /*animation effet wiggle*/
+    0%{transform: translate(-5px);}
+    9%{transform: translate(5px);}
+    18%{transform: translate(-5px);}
+    27%{transform: translate(5px);}
+    36%{transform: translate(-5px);}
+    45%{transform: translate(5px);}
+    54%{transform: translate(-5px);}
+    63%{transform: translate(5px);}
+    72%{transform: translate(-5px);}
+    81%{transform: translate(5px);}
+    100%{transform: translate(0deg);}
+}
+
+footer{                         /*position mention legale + contact dans footer*/
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+
+
+/*Menus*/
+.menus{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%; 
+}
+.menu-gauche{
+    margin-right: 5%;
+}
+.menus section{
+    display: flex;
+    margin-bottom: 3%;
+}
+.menus img{
+    cursor: pointer;
+    box-shadow: 0px 1px 15px 1px rgba(214, 210, 210, 0.897);
+    width: 100%;
+    height: auto;
+    &:hover{
+        animation-duration: 450ms;
+        opacity: .6; 
+    }
+}
+
+/*menus pages*/
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.menu img{
+    box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
+    width: 79%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+/*Bouton*/
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 0.4rem;
+    width: 42%;
+    max-width: 300px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.prochainement{
+    text-align: center;
+}
+
+.loading:after{        /*Animation points de suspension*/
+display: inline-block;
+animation: dotty steps(1,end) 1300ms infinite;
+content: '';
+}
+
+@keyframes dotty {
+0%   { content: ''; }
+25%  { content: '.'; }
+50%  { content: '..'; }
+75%  { content: '...'; }
+100% { content: ''; }
+}
+
+
+/*classe soulignement off*/
+.lien-underline{
+    text-decoration: none;
+}
+
+/*classes Couleur*/
+
+.jaune{
+    color: rgb(252,202,70);
+}
+
+.bleu-vert{
+    background-color:rgb(86,156,135) ;
+}
+
+/* Police */
+
+h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #353535;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+button, footer{ 
+    font-size: 13px;
+}
+
+
+/* Si la taille de l'écran est de 588 pixels ou plus, définissez la taille de la police comme ci-dessous*/
+@media only screen and (min-width: 588px){
+
+button, footer{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+}
+
+/* Si la taille de l'écran est de 1440 pixels ou plus, définissez la taille de la police comme ci-dessous*/
+@media only screen and (min-width: 1440px){
+
+    /*Bouton*/
+    button {
+        max-width: 450px;
+    }
+
+    button, footer{
+        font-size: 3rem;
+    }
+    
+    h1{
+        font-size: 5rem;
+    }
+    .logo{
+        max-width: 62%;
+    }
+}
