@@ -1,194 +1,940 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #ffffff;
+}
 
-body{
-    width: 100%;
-    height: auto;   
-    margin: 0;
-    background-color: #ffffff;
+#mentions-legales {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+#mentions-legales #titre {
+  font-size: 5vw;
+  text-align: center;
+  color: #f7cd54;
+}
+
+#mentions-legales p {
+  text-align: justify;
+  font-size: 3vh;
 }
 
 /*-------*/
 /*header*/
 /*-------*/
-
 /*H1*/
-h1{
-    display: none;
+span h1 {
+  display: none;
 }
 
 /*Logo ohmyfood*/
-.logo{
-    display: flex;
-    max-width: 50%;
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /*-------*/
 /*Footer*/
 /*-------*/
-
-footer div:hover{               /*animation mentions légales + contact*/       
-    animation: infinite thing 1.5s;  
+footer div {
+  /*animation au survol effet wiggle*/
+  /*animation mentions légales + contact*/
 }
 
-
-@keyframes thing {               /*animation effet wiggle*/
-    0%{transform: rotate(0deg);}
-    3%{transform: rotate(-6deg);}
-    4%{transform: rotate(6deg);}
-    5%{transform: rotate(-6deg);}
-    6%{transform: rotate(6deg);}
-    7%{transform: rotate(-6deg);}
-    8%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+footer div:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
 
-footer{                         /*position mention legale + contact dans footer*/
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-between;
-    padding: 1em;
+@-webkit-keyframes shake-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
 }
 
+@keyframes shake-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
 
+footer {
+  /*position mention legale + contact dans footer + taille police*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+.infos-position {
+  padding: .7em  0.5em;
+}
 
 /*Menus*/
-.menus{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 84%; 
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 7%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.menu-gauche{
-    margin-right: 5%;
+
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.menus section{
-    display: flex;
-    margin-bottom: 3%;
+
+/*-------------*/
+/*menu-enchanté*/
+/*-------------*/
+.menu_dimension_ombre {
+  /*dimension et ombre des menus*/
+  width: 190px;
+  height: 232px;
+  -webkit-box-shadow: 0px 0px 2px 1px #cfc9cf;
+          box-shadow: 0px 0px 2px 1px #cfc9cf;
+  margin-bottom: 15%;
 }
-.menus img{
-    cursor: pointer;
-    box-shadow: 0px 1px 15px 1px rgba(214, 210, 210, 0.897);
-    width: 100%;
-    height: auto;
+
+.align {
+  /*Alignement interieur des menus*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.align:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: -webkit-transform 900ms;
+  transition: -webkit-transform 900ms;
+  transition: transform 900ms;
+  transition: transform 900ms, -webkit-transform 900ms;
+  opacity: 0.7;
+}
+
+.menu-enchante {
+  background: #fcdfdb;
+}
+
+.menu-enchante img {
+  width: 25px;
+  height: auto;
+}
+
+.menu-enchante label {
+  font-family: 'Zhi Mang Xing', cursive;
+  color: #3d1319;
+}
+
+.menu-enchante a {
+  padding-top: 2%;
+  color: #3d1319;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: 'Short Stack', cursive;
+}
+
+.menu-chic {
+  background: linear-gradient(135deg, #fefee2 0%, #fffff3 100%);
+}
+
+.menu-chic p {
+  background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 58%, #8f5ae1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Oleo Script', cursive;
+}
+
+.menu-chic a {
+  font-size: 21px;
+  color: #c77412;
+  font-family: 'PT Serif', serif;
+}
+
+.menu-papille {
+  background-color: #edefef;
+}
+
+.menu-papille p {
+  background: linear-gradient(100deg, #0229dd 0%, #0453ea 58%, #44a3fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Dancing Script', cursive;
+}
+
+.menu-papille a {
+  font-size: 21px;
+  color: #0887fb;
+  font-family: 'Caveat', cursive;
+}
+
+.menu-gout {
+  background: #fdfffd;
+}
+
+.menu-gout p {
+  background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.menu-gout a {
+  font-size: 21px;
+  color: #72bf56;
+  font-family: 'Caveat', cursive;
 }
 
 /*menus pages*/
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2rem;
-    text-align: center;
-
+.menu {
+  width: 90%;
+  height: auto;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
+          box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
+  margin: auto;
+  cursor: default;
+  margin-bottom: 4em;
+  padding-bottom: 1.5em;
 }
 
-.menu img{
-    box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
-    width: 79%;
-    height: auto;
-    margin: auto;
+h3 {
+  position: relative;
 }
 
-
-
-/*Bouton*/
-
-button {
-    border: none;
-    border-radius: 7px;
-    padding: 0.4rem;
-    width: 42%;
-    max-width: 300px;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 15px;
+h3:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fcca46;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.prochainement{
-    text-align: center;
+h3:hover:before {
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-.loading:after{        /*Animation points de suspension*/
-display: inline-block;
-animation: dotty steps(1,end) 3s infinite;
-content: '';
+.filtre-dimension {
+  margin: auto;
+  width: 80%;
+}
+
+.marge-basse {
+  margin-bottom: 10px;
+}
+
+.plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plats-prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hr1, .hr2, .hr3 {
+  /*ligne séparatrice*/
+  width: 30%;
+  height: auto;
+}
+
+.hr2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.hr3 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/*page enchantée*/
+.pink {
+  background: #fcdfdb;
+}
+
+.enchante {
+  width: 88%;
+  color: #3d1319;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+
+.enchante h3 {
+  font-family: 'Bad Script', cursive;
+  font-size: 9.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0 .7em;
+}
+
+.enchante p {
+  font-family: 'Bad Script', cursive;
+  font-size: 5px;
+  font-weight: bold;
+}
+
+.enchante p span {
+  font-size: 6.5px;
+  font-weight: bolder;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.head img {
+  width: 10%;
+}
+
+.head label {
+  font-size: 7vw;
+  font-family: 'Zhi Mang Xing', cursive;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Zhi Mang Xing', cursive;
+  font-size: 4vw;
+  padding-top: 10px;
+}
+
+.footer img {
+  width: 5%;
+}
+
+/*Page chic*/
+.pink- {
+  background-color: #fff5fe;
+}
+
+.violet {
+  color: #a56799;
+}
+
+.orange {
+  color: #c67412;
+}
+
+.bleu {
+  color: #6e4ccc;
+}
+
+.chic {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chic h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 8.2px;
+}
+
+.chic h2 {
+  background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 64%, #6e4ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+  font-family: 'Oleo Script', cursive;
+}
+
+.chic p {
+  font-family: 'PT Serif', serif;
+  font-size: 6px;
+  font-weight: bold;
+  margin: 6.5px 0;
+}
+
+.chic p span {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.chic .bleu div {
+  margin: 15px 0;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10% 0;
+}
+
+/*Page papille*/
+.bg-papille {
+  background-color: #edefef;
+}
+
+.papille {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.papille h2 {
+  background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Dancing Script', cursive;
+  font-weight: lighter;
+}
+
+.papille h3 {
+  font-family: 'Bad Script', cursive;
+  font-size: 11px;
+}
+
+.papille p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: 'Bad Script', cursive;
+}
+
+.papille p span {
+  font-size: 9px;
+}
+
+/*Page goût*/
+.bg-gout {
+  background-color: #fdfffd;
+}
+
+.gout {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gout h2 {
+  background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.gout h3 {
+  font-family: 'Bad Script', cursive;
+  font-size: 11px;
+}
+
+.gout p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: 'Bad Script', cursive;
+}
+
+.gout p span {
+  font-size: 9px;
+}
+
+/*Prochainement*/
+.prochainement {
+  border-radius: 15px;
+  width: 9.5em;
+  padding: .3em  0;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+.loading {
+  margin: 0px 0px;
+}
+
+.loading::after {
+  /*Animation points de suspension*/
+  display: inline-block;
+  -webkit-animation: dotty steps(1, end) 2000ms infinite;
+          animation: dotty steps(1, end) 2000ms infinite;
+  content: '';
+}
+
+@-webkit-keyframes dotty {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
 }
 
 @keyframes dotty {
-0%   { content: ''; }
-25%  { content: '.'; }
-50%  { content: '..'; }
-75%  { content: '...'; }
-100% { content: ''; }
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
 }
 
-
 /*classe soulignement off*/
-.lien-underline{
-    text-decoration: none;
+.lien-underline {
+  text-decoration: none;
 }
 
 /*classes Couleur*/
-
-.jaune{
-    color: rgb(252,202,70);
+.jaune {
+  color: #fcca46;
 }
 
-.bleu-vert{
-    background-color:rgb(86,156,135) ;
+.bleu-vert {
+  background-color: #569c87;
 }
 
 /* Police */
-
-h1{
-    font-family: sans-serif;
-    font-size: 20px;
-    color: #353535;
-    margin-top: 5%;
-    margin-bottom: 10px;
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #353535;
+  margin-top: 7%;
+  margin-bottom: 10px;
 }
 
-button, footer{ 
-    font-size: 13px;
+/* Si la taille de l'écran est de 570 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 570px) {
+  .prochainement {
+    width: 9em;
+    font-size: 2.3em;
+  }
+  button, footer {
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 285px;
+    height: 348px;
+  }
+  .menu_dimension_ombre .content img {
+    width: 2em;
+  }
+  .menu_dimension_ombre .content p, .menu_dimension_ombre .content label {
+    font-size: 1.5em;
+  }
+  .menu_dimension_ombre .content a {
+    font-size: 2em;
+  }
+  .menu {
+    margin-bottom: 8em;
+  }
+  .menu h2 {
+    font-size: 3em;
+  }
+  .menu h3 {
+    font-size: 1em;
+  }
+  .menu p {
+    font-size: .7em;
+  }
+  .menu p span {
+    font-size: .9em;
+    font-weight: bold;
+  }
 }
 
-
-/* Si la taille de l'écran est de 588 pixels ou plus, définissez la taille de la police comme ci-dessous*/
-@media only screen and (min-width: 588px){
-
-button, footer{
-    font-size: 2rem;
+/* Si la taille de l'écran est de 768 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 768px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 310px;
+    height: 378px;
+  }
+  .menu {
+    margin-bottom: 8em;
+  }
+  .menu h2 {
+    font-size: 4em;
+  }
+  .menu h3 {
+    font-size: 1.4em;
+  }
+  .menu p {
+    font-size: 1em;
+  }
+  .menu p span {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
 }
 
-h1{
-    font-size: 3rem;
-}
+/* Si la taille de l'écran est de 930 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 930px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 340px;
+    height: 415px;
+  }
+  .menu {
+    margin-bottom: 8em;
+  }
+  .menu h2 {
+    font-size: 5em;
+  }
+  .menu h3 {
+    font-size: 1.7em;
+  }
+  .menu p {
+    font-size: 1.3em;
+  }
+  .menu p span {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
 }
 
-/* Si la taille de l'écran est de 1440 pixels ou plus, définissez la taille de la police comme ci-dessous*/
-@media only screen and (min-width: 1440px){
-
-    /*Bouton*/
-    button {
-        max-width: 450px;
-    }
-
-    button, footer{
-        font-size: 3rem;
-    }
-    
-    h1{
-        font-size: 5rem;
-    }
-    .logo{
-        max-width: 62%;
-    }
+/* Si la taille de l'écran est de 1021 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1021px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 28em;
+    height: 34.18em;
+  }
+  .content img {
+    width: 2.5em;
+  }
+  .content p, .content label {
+    font-size: 2em;
+  }
+  .content a {
+    font-size: 2.5em;
+  }
 }
+
+/* Si la taille de l'écran est de 1335 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1335px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 31em;
+    height: 37.8em;
+  }
+  .menu {
+    margin-bottom: 12em;
+  }
+  .menu h2 {
+    font-size: 6em;
+  }
+  .menu h3 {
+    font-size: 2em;
+  }
+  .menu p {
+    font-size: 1.4em;
+  }
+  .menu p span {
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+}
+
+/* Si la taille de l'écran est de 1440 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1444px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 35em;
+    height: 42.8em;
+  }
+  .content img {
+    width: 2.5em;
+  }
+  .content p, .content label {
+    font-size: 2em;
+  }
+  .content a {
+    font-size: 2.5em;
+  }
+  .prochainement, footer {
+    font-size: 3em;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/* Si la taille de l'écran est de 1680 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1680px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 42em;
+    height: 51.3em;
+  }
+  .content img {
+    width: 3.5em;
+  }
+  .content p, .content label {
+    font-size: 3em;
+  }
+  .content a {
+    font-size: 3.5em;
+  }
+  .menu {
+    margin-bottom: 13em;
+  }
+  .menu h2 {
+    font-size: 7em;
+  }
+  .menu h3 {
+    font-size: 2.6em;
+  }
+  .menu p {
+    font-size: 1.8em;
+  }
+  .menu p span {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  .prochainement, footer {
+    font-size: 4em;
+  }
+  h1 {
+    font-size: 6em;
+  }
+}
+
+/* Si la taille de l'écran est de 2020 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 2020px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 50em;
+    height: 61.3em;
+  }
+  .content img {
+    width: 4.1em;
+  }
+  .content p, .content label {
+    font-size: 3.6em;
+  }
+  .content a {
+    font-size: 4.1em;
+  }
+  .prochainement, footer {
+    font-size: 4.6em;
+  }
+  h1 {
+    font-size: 6.6em;
+  }
+  .menu {
+    margin-bottom: 17em;
+  }
+  .menu h2 {
+    font-size: 9em;
+  }
+  .menu h3 {
+    font-size: 4.5em;
+  }
+  .menu p {
+    font-size: 2.5em;
+  }
+  .menu p span {
+    font-size: 2em;
+  }
+}
+
+/* Si la taille de l'écran est de 2403 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 2403px) {
+  .menu_dimension_ombre {
+    /*dimension et ombre des menus*/
+    width: 60em;
+    height: 73.2em;
+  }
+  .content img {
+    width: 4.7em;
+  }
+  .content p, .content label {
+    font-size: 4.2em;
+  }
+  .content a {
+    font-size: 4.7em;
+  }
+  .prochainement, footer {
+    font-size: 4.2em;
+  }
+  h1 {
+    font-size: 7.2em;
+  }
+}
+/*# sourceMappingURL=test.css.map */
