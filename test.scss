@@ -26,7 +26,7 @@ body{
 /*-------*/
 
 /*H1*/
-span h1{
+header h1{
     display: none;
 }
 
@@ -206,7 +206,7 @@ footer{                         /*position mention legale + contact dans footer 
     margin-bottom: 4em;  
     padding-bottom: 1.5em;
 }
-h3{
+h4{
     position: relative;
     &:before{
     content: "";
@@ -269,7 +269,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5%;
-    h3{
+    h4{
         font-family: 'Bad Script', cursive;
         font-size: 9.5px;
         margin-top: 0px;
@@ -334,11 +334,11 @@ h3{
     width: 88%;
     margin-left: auto;
     margin-right: auto;
-    h3{
+    h4{
         font-family: 'PT Serif', serif;
         font-size: 8.2px;
     }
-    h2{
+    h3{
         background: linear-gradient(135deg, rgba(224,136,29,1) 0%, rgba(171,106,179,1) 64%, #6e4ccc 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -379,14 +379,14 @@ h3{
     margin-left: auto;
     margin-right: auto;
     
-    h2{
+    h3{
         background: linear-gradient(100deg, rgba(2,41,221,1) 0%, #0453ea 20%, rgba(68,163,251,1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Dancing Script', cursive; 
         font-weight: lighter;
     }
-    h3{
+    h4{
        font-family: 'Bad Script', cursive;
        font-size: 11px; 
     }
@@ -408,13 +408,13 @@ h3{
     margin-left: auto;
     margin-right: auto;
     
-    h2{
+    h3{
         background: linear-gradient(135deg, rgba(73,156,64,1) 0%, rgba(149,220,105,1) 58%, rgba(190,225,127,1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Kaushan Script', cursive;
     }
-    h3{
+    h4{
        font-family: 'Bad Script', cursive;
        font-size: 11px; 
     }
@@ -518,10 +518,10 @@ h1{
 .menu{ 
     margin-bottom: 8em;
     
-    h2{
+    h3{
         font-size: 3em;
     }
-    h3{
+    h4{
         font-size: 1em;
     }
     p{
@@ -545,10 +545,10 @@ h1{
     .menu{ 
         margin-bottom: 8em;
         
-        h2{
+        h3{
             font-size: 4em;
         }
-        h3{
+        h4{
             font-size: 1.4em;
         }
         p{
@@ -569,10 +569,10 @@ h1{
     .menu{ 
         margin-bottom: 8em;
         
-        h2{
+        h3{
             font-size: 5em;
         }
-        h3{
+        h4{
             font-size: 1.7em;
         }
         p{
@@ -611,10 +611,10 @@ h1{
     .menu{ 
         margin-bottom: 12em;
         
-        h2{
+        h3{
             font-size: 6em;
         }
-        h3{
+        h4{
             font-size: 2em;
         }
         p{
@@ -672,10 +672,10 @@ h1{
     .menu{ 
         margin-bottom: 13em;
         
-        h2{
+        h3{
             font-size: 7em;
         }
-        h3{
+        h4{
             font-size: 2.6em;
         }
         p{
@@ -721,10 +721,10 @@ h1{
     .menu{ 
         margin-bottom: 17em;
         
-        h2{
+        h3{
             font-size: 9em;
         }
-        h3{
+        h4{
             font-size: 4.5em;
         }
         p{

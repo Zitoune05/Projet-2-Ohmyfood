@@ -28,7 +28,7 @@ body {
 /*header*/
 /*-------*/
 /*H1*/
-span h1 {
+header h1 {
   display: none;
 }
 
@@ -234,7 +234,7 @@ footer {
 }
 
 .menu-chic {
-  background: linear-gradient(135deg, #fefee2 0%, #fffff3 100%);
+  background-color: #fff5fe;
 }
 
 .menu-chic p {
@@ -251,7 +251,7 @@ footer {
 }
 
 .menu-papille {
-  background-color: #edefef;
+  background-color: #f9f9f9;
 }
 
 .menu-papille p {
@@ -296,11 +296,11 @@ footer {
   padding-bottom: 1.5em;
 }
 
-h3 {
+h4 {
   position: relative;
 }
 
-h3:before {
+h4:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -318,7 +318,7 @@ h3:before {
   transition: all 0.3s ease-in-out;
 }
 
-h3:hover:before {
+h4:hover:before {
   visibility: visible;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -387,7 +387,7 @@ h3:hover:before {
   padding-bottom: 5%;
 }
 
-.enchante h3 {
+.enchante h4 {
   font-family: 'Bad Script', cursive;
   font-size: 9.5px;
   margin-top: 0px;
@@ -476,12 +476,12 @@ h3:hover:before {
   margin-right: auto;
 }
 
-.chic h3 {
+.chic h4 {
   font-family: 'PT Serif', serif;
   font-size: 8.2px;
 }
 
-.chic h2 {
+.chic h3 {
   background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 64%, #6e4ccc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -525,7 +525,7 @@ h3:hover:before {
 
 /*Page papille*/
 .bg-papille {
-  background-color: #edefef;
+  background-color: #f9f9f9;
 }
 
 .papille {
@@ -534,7 +534,7 @@ h3:hover:before {
   margin-right: auto;
 }
 
-.papille h2 {
+.papille h3 {
   background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -542,7 +542,7 @@ h3:hover:before {
   font-weight: lighter;
 }
 
-.papille h3 {
+.papille h4 {
   font-family: 'Bad Script', cursive;
   font-size: 11px;
 }
@@ -568,14 +568,14 @@ h3:hover:before {
   margin-right: auto;
 }
 
-.gout h2 {
+.gout h3 {
   background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Kaushan Script', cursive;
 }
 
-.gout h3 {
+.gout h4 {
   font-family: 'Bad Script', cursive;
   font-size: 11px;
 }
@@ -703,10 +703,10 @@ h1 {
   .menu {
     margin-bottom: 8em;
   }
-  .menu h2 {
+  .menu h3 {
     font-size: 3em;
   }
-  .menu h3 {
+  .menu h4 {
     font-size: 1em;
   }
   .menu p {
@@ -728,10 +728,10 @@ h1 {
   .menu {
     margin-bottom: 8em;
   }
-  .menu h2 {
+  .menu h3 {
     font-size: 4em;
   }
-  .menu h3 {
+  .menu h4 {
     font-size: 1.4em;
   }
   .menu p {
@@ -753,10 +753,10 @@ h1 {
   .menu {
     margin-bottom: 8em;
   }
-  .menu h2 {
+  .menu h3 {
     font-size: 5em;
   }
-  .menu h3 {
+  .menu h4 {
     font-size: 1.7em;
   }
   .menu p {
@@ -796,10 +796,10 @@ h1 {
   .menu {
     margin-bottom: 12em;
   }
-  .menu h2 {
+  .menu h3 {
     font-size: 6em;
   }
-  .menu h3 {
+  .menu h4 {
     font-size: 2em;
   }
   .menu p {
@@ -854,10 +854,10 @@ h1 {
   .menu {
     margin-bottom: 13em;
   }
-  .menu h2 {
+  .menu h3 {
     font-size: 7em;
   }
-  .menu h3 {
+  .menu h4 {
     font-size: 2.6em;
   }
   .menu p {
@@ -900,10 +900,10 @@ h1 {
   .menu {
     margin-bottom: 17em;
   }
-  .menu h2 {
+  .menu h3 {
     font-size: 9em;
   }
-  .menu h3 {
+  .menu h4 {
     font-size: 4.5em;
   }
   .menu p {
