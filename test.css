@@ -665,7 +665,7 @@ h4:hover:before {
 }
 
 /* Police */
-h1 {
+h2 {
   text-align: center;
   font-family: sans-serif;
   font-size: 1em;
@@ -683,7 +683,7 @@ h1 {
   button, footer {
     font-size: 2em;
   }
-  h1 {
+  h2 {
     font-size: 3em;
   }
   .menu_dimension_ombre {
@@ -830,7 +830,7 @@ h1 {
   .prochainement, footer {
     font-size: 3em;
   }
-  h1 {
+  h2 {
     font-size: 5em;
   }
 }
@@ -870,7 +870,7 @@ h1 {
   .prochainement, footer {
     font-size: 4em;
   }
-  h1 {
+  h2 {
     font-size: 6em;
   }
 }
@@ -894,7 +894,7 @@ h1 {
   .prochainement, footer {
     font-size: 4.6em;
   }
-  h1 {
+  h2 {
     font-size: 6.6em;
   }
   .menu {
@@ -933,7 +933,7 @@ h1 {
   .prochainement, footer {
     font-size: 4.2em;
   }
-  h1 {
+  h2 {
     font-size: 7.2em;
   }
 }
