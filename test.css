@@ -197,13 +197,27 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30%;
+}
+
+.scale {
+  /*Animation scale + opacity*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.align:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.scale:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
   -webkit-transition: -webkit-transform 900ms;
   transition: -webkit-transform 900ms;
   transition: transform 900ms;
@@ -262,7 +276,7 @@ footer {
 }
 
 .menu-papille a {
-  font-size: 21px;
+  font-size: 25px;
   color: #0887fb;
   font-family: 'Caveat', cursive;
 }
@@ -279,7 +293,7 @@ footer {
 }
 
 .menu-gout a {
-  font-size: 21px;
+  font-size: 25px;
   color: #72bf56;
   font-family: 'Caveat', cursive;
 }
@@ -692,13 +706,13 @@ h2 {
     height: 348px;
   }
   .menu_dimension_ombre .content img {
-    width: 2em;
+    width: 2.15em;
   }
   .menu_dimension_ombre .content p, .menu_dimension_ombre .content label {
-    font-size: 1.5em;
+    font-size: 1.65em;
   }
   .menu_dimension_ombre .content a {
-    font-size: 2em;
+    font-size: 2.15em;
   }
   .menu {
     margin-bottom: 8em;
@@ -724,6 +738,15 @@ h2 {
     /*dimension et ombre des menus*/
     width: 310px;
     height: 378px;
+  }
+  .content img {
+    width: 2.3em;
+  }
+  .content p, .content label {
+    font-size: 1.7em;
+  }
+  .content a {
+    font-size: 2.3em;
   }
   .menu {
     margin-bottom: 8em;
