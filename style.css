@@ -6,24 +6,6 @@ body {
   background-color: #ffffff;
 }
 
-#mentions-legales {
-  width: 90%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-#mentions-legales #titre {
-  font-size: 5vw;
-  text-align: center;
-  color: #f7cd54;
-}
-
-#mentions-legales p {
-  text-align: justify;
-  font-size: 3vh;
-}
-
 /*-------*/
 /*header*/
 /*-------*/
@@ -152,6 +134,25 @@ footer {
   padding: .7em  0.5em;
 }
 
+/*page mentions légales*/
+#mentions-legales {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+#mentions-legales #titre {
+  font-size: 5vw;
+  text-align: center;
+  color: #f7cd54;
+}
+
+#mentions-legales p {
+  text-align: justify;
+  font-size: 3vh;
+}
+
 /*Menus*/
 .content {
   display: -webkit-box;
@@ -225,21 +226,21 @@ footer {
   opacity: 0.7;
 }
 
-.menu-enchante {
+#menu-enchante {
   background: #fcdfdb;
 }
 
-.menu-enchante img {
+#menu-enchante img {
   width: 25px;
   height: auto;
 }
 
-.menu-enchante label {
+#menu-enchante label {
   font-family: 'Zhi Mang Xing', cursive;
   color: #3d1319;
 }
 
-.menu-enchante a {
+#menu-enchante a {
   padding-top: 2%;
   color: #3d1319;
   font-size: 21px;
@@ -247,59 +248,59 @@ footer {
   font-family: 'Short Stack', cursive;
 }
 
-.menu-chic {
+#menu-chic {
   background-color: #fff5fe;
 }
 
-.menu-chic p {
+#menu-chic p {
   background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 58%, #8f5ae1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Oleo Script', cursive;
 }
 
-.menu-chic a {
+#menu-chic a {
   font-size: 21px;
   color: #c77412;
   font-family: 'PT Serif', serif;
 }
 
-.menu-papille {
+#menu-papille {
   background-color: #f9f9f9;
 }
 
-.menu-papille p {
+#menu-papille p {
   background: linear-gradient(100deg, #0229dd 0%, #0453ea 58%, #44a3fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Dancing Script', cursive;
 }
 
-.menu-papille a {
+#menu-papille a {
   font-size: 25px;
   color: #0887fb;
   font-family: 'Caveat', cursive;
 }
 
-.menu-gout {
+#menu-gout {
   background: #fdfffd;
 }
 
-.menu-gout p {
+#menu-gout p {
   background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Kaushan Script', cursive;
 }
 
-.menu-gout a {
+#menu-gout a {
   font-size: 25px;
   color: #72bf56;
   font-family: 'Caveat', cursive;
 }
 
 /*menus pages*/
-.menu {
+#menu {
   width: 90%;
   height: auto;
   -webkit-box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
@@ -347,7 +348,7 @@ h4:hover:before {
   margin-bottom: 10px;
 }
 
-.plat {
+.petit-titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +394,7 @@ h4:hover:before {
   background: #fcdfdb;
 }
 
-.enchante {
+#enchante {
   width: 88%;
   color: #3d1319;
   margin-left: auto;
@@ -401,7 +402,7 @@ h4:hover:before {
   padding-bottom: 5%;
 }
 
-.enchante h4 {
+#enchante h4 {
   font-family: 'Bad Script', cursive;
   font-size: 9.5px;
   margin-top: 0px;
@@ -409,13 +410,13 @@ h4:hover:before {
   padding: 0 .7em;
 }
 
-.enchante p {
+#enchante p {
   font-family: 'Bad Script', cursive;
   font-size: 5px;
   font-weight: bold;
 }
 
-.enchante p span {
+#enchante p span {
   font-size: 6.5px;
   font-weight: bolder;
 }
@@ -484,18 +485,18 @@ h4:hover:before {
   color: #6e4ccc;
 }
 
-.chic {
+#chic {
   width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.chic h4 {
+#chic h4 {
   font-family: 'PT Serif', serif;
   font-size: 8.2px;
 }
 
-.chic h3 {
+#chic h3 {
   background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 64%, #6e4ccc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -503,19 +504,19 @@ h4:hover:before {
   font-family: 'Oleo Script', cursive;
 }
 
-.chic p {
+#chic p {
   font-family: 'PT Serif', serif;
   font-size: 6px;
   font-weight: bold;
   margin: 6.5px 0;
 }
 
-.chic p span {
+#chic p span {
   font-size: 8px;
   font-weight: bold;
 }
 
-.chic .bleu div {
+#chic .bleu div {
   margin: 15px 0;
 }
 
@@ -542,13 +543,13 @@ h4:hover:before {
   background-color: #f9f9f9;
 }
 
-.papille {
+#papille {
   width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.papille h3 {
+#papille h3 {
   background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -556,18 +557,18 @@ h4:hover:before {
   font-weight: lighter;
 }
 
-.papille h4 {
+#papille h4 {
   font-family: 'Bad Script', cursive;
   font-size: 11px;
 }
 
-.papille p {
+#papille p {
   font-weight: bold;
   font-size: 7px;
   font-family: 'Bad Script', cursive;
 }
 
-.papille p span {
+#papille p span {
   font-size: 9px;
 }
 
@@ -576,31 +577,31 @@ h4:hover:before {
   background-color: #fdfffd;
 }
 
-.gout {
+#gout {
   width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.gout h3 {
+#gout h3 {
   background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Kaushan Script', cursive;
 }
 
-.gout h4 {
+#gout h4 {
   font-family: 'Bad Script', cursive;
   font-size: 11px;
 }
 
-.gout p {
+#gout p {
   font-weight: bold;
   font-size: 7px;
   font-family: 'Bad Script', cursive;
 }
 
-.gout p span {
+#gout p span {
   font-size: 9px;
 }
 
@@ -714,19 +715,19 @@ h2 {
   .menu_dimension_ombre .content a {
     font-size: 2.15em;
   }
-  .menu {
+  #menu {
     margin-bottom: 8em;
   }
-  .menu h3 {
+  #menu h3 {
     font-size: 3em;
   }
-  .menu h4 {
+  #menu h4 {
     font-size: 1em;
   }
-  .menu p {
+  #menu p {
     font-size: .7em;
   }
-  .menu p span {
+  #menu p span {
     font-size: .9em;
     font-weight: bold;
   }
@@ -748,19 +749,19 @@ h2 {
   .content a {
     font-size: 2.3em;
   }
-  .menu {
+  #menu {
     margin-bottom: 8em;
   }
-  .menu h3 {
+  #menu h3 {
     font-size: 4em;
   }
-  .menu h4 {
+  #menu h4 {
     font-size: 1.4em;
   }
-  .menu p {
+  #menu p {
     font-size: 1em;
   }
-  .menu p span {
+  #menu p span {
     font-size: 1.3em;
     font-weight: bold;
   }
@@ -773,19 +774,19 @@ h2 {
     width: 340px;
     height: 415px;
   }
-  .menu {
+  #menu {
     margin-bottom: 8em;
   }
-  .menu h3 {
+  #menu h3 {
     font-size: 5em;
   }
-  .menu h4 {
+  #menu h4 {
     font-size: 1.7em;
   }
-  .menu p {
+  #menu p {
     font-size: 1.3em;
   }
-  .menu p span {
+  #menu p span {
     font-size: 1.6em;
     font-weight: bold;
   }
@@ -816,19 +817,19 @@ h2 {
     width: 31em;
     height: 37.8em;
   }
-  .menu {
+  #menu {
     margin-bottom: 12em;
   }
-  .menu h3 {
+  #menu h3 {
     font-size: 6em;
   }
-  .menu h4 {
+  #menu h4 {
     font-size: 2em;
   }
-  .menu p {
+  #menu p {
     font-size: 1.4em;
   }
-  .menu p span {
+  #menu p span {
     font-size: 1.7em;
     font-weight: bold;
   }
@@ -874,19 +875,19 @@ h2 {
   .content a {
     font-size: 3.5em;
   }
-  .menu {
+  #menu {
     margin-bottom: 13em;
   }
-  .menu h3 {
+  #menu h3 {
     font-size: 7em;
   }
-  .menu h4 {
+  #menu h4 {
     font-size: 2.6em;
   }
-  .menu p {
+  #menu p {
     font-size: 1.8em;
   }
-  .menu p span {
+  #menu p span {
     font-size: 1.6em;
     font-weight: bold;
   }
@@ -920,19 +921,19 @@ h2 {
   h2 {
     font-size: 6.6em;
   }
-  .menu {
+  #menu {
     margin-bottom: 17em;
   }
-  .menu h3 {
+  #menu h3 {
     font-size: 9em;
   }
-  .menu h4 {
+  #menu h4 {
     font-size: 4.5em;
   }
-  .menu p {
+  #menu p {
     font-size: 2.5em;
   }
-  .menu p span {
+  #menu p span {
     font-size: 2em;
   }
 }
@@ -960,4 +961,4 @@ h2 {
     font-size: 7.2em;
   }
 }
-/*# sourceMappingURL=test.css.map */
+/*# sourceMappingURL=style.css.map */
