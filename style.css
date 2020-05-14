@@ -27,143 +27,11 @@ header h1 {
   margin-right: auto;
 }
 
-/*-------*/
-/*Footer*/
-/*-------*/
-footer div {
-  /*animation au survol effet wiggle*/
-  /*animation mentions légales + contact*/
-}
-
-footer div:hover {
-  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-}
-
-@-webkit-keyframes shake-top {
-  0%,
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-  }
-  10% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-  }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  30%,
-  50%,
-  70% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
-  }
-  80% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-  }
-  90% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-  }
-}
-
-@keyframes shake-top {
-  0%,
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-  }
-  10% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-  }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  30%,
-  50%,
-  70% {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
-  }
-  80% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-  }
-  90% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
-  }
-}
-
-footer {
-  /*position mention legale + contact dans footer + taille police*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 13px;
-  position: fixed;
-  height: auto;
-  width: 100%;
-  bottom: 0;
-}
-
-.infos-position {
-  padding: .7em  0.5em;
-}
-
-/*page mentions légales*/
-#mentions-legales {
-  width: 90%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 15%;
-}
-
-#mentions-legales #titre {
-  font-size: 5vw;
-  text-align: center;
-  color: #f7cd54;
-}
-
-#mentions-legales p {
-  text-align: justify;
-  font-size: 3vh;
-}
-
-/*Menus*/
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 7%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.menus {
+/*-------------------*/
+/*----Menus-index----*/
+/*-------------------*/
+#menus {
+  padding-top: 9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,16 +41,25 @@ footer {
       justify-content: space-around;
 }
 
-/*-------------*/
-/*menu-enchanté*/
-/*-------------*/
+#menus img {
+  width: 30px;
+}
+
+#menus h2 {
+  font-size: 17px;
+}
+
+#menus a {
+  font-size: 20px;
+}
+
 .menu_dimension_ombre {
   /*dimension et ombre des menus*/
   width: 190px;
   height: 232px;
-  -webkit-box-shadow: 0px 0px 2px 1px #cfc9cf;
-          box-shadow: 0px 0px 2px 1px #cfc9cf;
-  margin-bottom: 15%;
+  -webkit-box-shadow: 0px 0px 5px 2px #cfc9cf;
+          box-shadow: 0px 0px 5px 2px #cfc9cf;
+  margin-bottom: 10%;
 }
 
 .align {
@@ -200,11 +77,11 @@ footer {
   padding-top: 30%;
 }
 
-.scale {
-  /*Animation scale + opacity*/
+.align div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*Animation scale + opacity*/
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -216,9 +93,9 @@ footer {
           transform: scale(1);
 }
 
-.scale:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+.align div:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   -webkit-transition: -webkit-transform 900ms;
   transition: -webkit-transform 900ms;
   transition: transform 900ms;
@@ -227,32 +104,29 @@ footer {
 }
 
 #menu-enchante {
+  /*Menu la note enchantée*/
   background: #fcdfdb;
 }
 
-#menu-enchante img {
-  width: 25px;
-  height: auto;
-}
-
-#menu-enchante label {
+#menu-enchante h2 {
+  margin-top: 0px;
   font-family: 'Zhi Mang Xing', cursive;
   color: #3d1319;
+  font-weight: 500;
 }
 
 #menu-enchante a {
-  padding-top: 2%;
   color: #3d1319;
-  font-size: 21px;
   font-weight: bold;
   font-family: 'Short Stack', cursive;
 }
 
 #menu-chic {
+  /*Menu le chic à la française*/
   background-color: #fff5fe;
 }
 
-#menu-chic p {
+#menu-chic h2 {
   background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 58%, #8f5ae1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -260,16 +134,16 @@ footer {
 }
 
 #menu-chic a {
-  font-size: 21px;
   color: #c77412;
   font-family: 'PT Serif', serif;
 }
 
 #menu-papille {
+  /*Menu le délice des papilles*/
   background-color: #f9f9f9;
 }
 
-#menu-papille p {
+#menu-papille h2 {
   background: linear-gradient(100deg, #0229dd 0%, #0453ea 58%, #44a3fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -277,16 +151,16 @@ footer {
 }
 
 #menu-papille a {
-  font-size: 25px;
   color: #0887fb;
   font-family: 'Caveat', cursive;
 }
 
 #menu-gout {
+  /*Menu la palette du goût*/
   background: #fdfffd;
 }
 
-#menu-gout p {
+#menu-gout h2 {
   background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -294,12 +168,23 @@ footer {
 }
 
 #menu-gout a {
-  font-size: 25px;
   color: #72bf56;
   font-family: 'Caveat', cursive;
 }
 
-/*menus pages*/
+/*-------------*/
+/*menu-pages*/
+/*-------------*/
+/* Police */
+main h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5em;
+  color: #353535;
+  margin-top: 7%;
+  margin-bottom: 10px;
+}
+
 #menu {
   width: 90%;
   height: auto;
@@ -608,28 +493,27 @@ h4:hover:before {
 /*Prochainement*/
 .prochainement {
   border-radius: 15px;
-  width: 9.5em;
-  padding: .3em  0;
+  width: 9em;
   margin-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .loading {
-  margin: 0px 0px;
+  /*Animation points de suspension*/
+  padding: .4em 1em;
 }
 
 .loading::after {
-  /*Animation points de suspension*/
   display: inline-block;
-  -webkit-animation: dotty steps(1, end) 2000ms infinite;
-          animation: dotty steps(1, end) 2000ms infinite;
-  content: '';
+  -webkit-animation: doty steps(1, end) 2000ms infinite;
+          animation: doty steps(1, end) 2000ms infinite;
+  content: '...';
 }
 
-@-webkit-keyframes dotty {
+@-webkit-keyframes doty {
   0% {
     content: '';
   }
@@ -647,7 +531,7 @@ h4:hover:before {
   }
 }
 
-@keyframes dotty {
+@keyframes doty {
   0% {
     content: '';
   }
@@ -679,14 +563,129 @@ h4:hover:before {
   background-color: #569c87;
 }
 
-/* Police */
-h2 {
+/*-------*/
+/*Footer*/
+/*-------*/
+footer div {
+  /*animation mentions légales + contact au survol effet wiggle*/
+}
+
+footer div:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@-webkit-keyframes shake-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes shake-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+footer {
+  /*position mention legale + contact dans footer + taille police*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+.infos-position {
+  padding: .7em  0.5em;
+}
+
+/*page mentions légales*/
+#mentions-legales {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+#mentions-legales #titre {
+  font-size: 5vw;
   text-align: center;
-  font-family: sans-serif;
-  font-size: 1em;
-  color: #353535;
-  margin-top: 7%;
-  margin-bottom: 10px;
+  color: #f7cd54;
+}
+
+#mentions-legales p {
+  text-align: justify;
+  font-size: 3vh;
 }
 
 /* Si la taille de l'écran est de 570 pixels ou plus, définir comme ci-dessous*/
@@ -698,22 +697,22 @@ h2 {
   button, footer {
     font-size: 2em;
   }
-  h2 {
-    font-size: 3em;
+  p {
+    font-size: 1em;
   }
   .menu_dimension_ombre {
     /*dimension et ombre des menus*/
     width: 285px;
     height: 348px;
   }
-  .menu_dimension_ombre .content img {
+  #menus img {
     width: 2.15em;
   }
-  .menu_dimension_ombre .content p, .menu_dimension_ombre .content label {
+  #menus h2 {
     font-size: 1.65em;
   }
-  .menu_dimension_ombre .content a {
-    font-size: 2.15em;
+  #menus a {
+    font-size: 35px;
   }
   #menu {
     margin-bottom: 8em;
@@ -740,14 +739,14 @@ h2 {
     width: 310px;
     height: 378px;
   }
-  .content img {
-    width: 2.3em;
+  #menus img {
+    width: 2.5em;
   }
-  .content p, .content label {
+  #menus h2 {
     font-size: 1.7em;
   }
-  .content a {
-    font-size: 2.3em;
+  #menus a {
+    font-size: 40px;
   }
   #menu {
     margin-bottom: 8em;
@@ -799,14 +798,14 @@ h2 {
     width: 28em;
     height: 34.18em;
   }
-  .content img {
-    width: 2.5em;
+  #menus img {
+    width: 55px;
   }
-  .content p, .content label {
-    font-size: 2em;
+  #menus h2 {
+    font-size: 45px;
   }
-  .content a {
-    font-size: 2.5em;
+  #menus a {
+    font-size: 55px;
   }
 }
 
@@ -842,20 +841,20 @@ h2 {
     width: 35em;
     height: 42.8em;
   }
-  .content img {
-    width: 2.5em;
+  #menus img {
+    width: 60px;
   }
-  .content p, .content label {
-    font-size: 2em;
+  #menus h2 {
+    font-size: 50px;
   }
-  .content a {
-    font-size: 2.5em;
+  #menus a {
+    font-size: 60px;
   }
   .prochainement, footer {
     font-size: 3em;
   }
-  h2 {
-    font-size: 5em;
+  p {
+    font-size: 1em;
   }
 }
 
@@ -866,14 +865,14 @@ h2 {
     width: 42em;
     height: 51.3em;
   }
-  .content img {
-    width: 3.5em;
+  #menus img {
+    width: 70px;
   }
-  .content p, .content label {
-    font-size: 3em;
+  #menus h2 {
+    font-size: 60px;
   }
-  .content a {
-    font-size: 3.5em;
+  #menus a {
+    font-size: 70px;
   }
   #menu {
     margin-bottom: 13em;
@@ -894,9 +893,6 @@ h2 {
   .prochainement, footer {
     font-size: 4em;
   }
-  h2 {
-    font-size: 6em;
-  }
 }
 
 /* Si la taille de l'écran est de 2020 pixels ou plus, définir comme ci-dessous*/
@@ -906,20 +902,17 @@ h2 {
     width: 50em;
     height: 61.3em;
   }
-  .content img {
-    width: 4.1em;
+  #menus img {
+    width: 90px;
   }
-  .content p, .content label {
-    font-size: 3.6em;
+  #menus h2 {
+    font-size: 80px;
   }
-  .content a {
-    font-size: 4.1em;
+  #menus a {
+    font-size: 90px;
   }
   .prochainement, footer {
     font-size: 4.6em;
-  }
-  h2 {
-    font-size: 6.6em;
   }
   #menu {
     margin-bottom: 17em;
@@ -945,20 +938,17 @@ h2 {
     width: 60em;
     height: 73.2em;
   }
-  .content img {
-    width: 4.7em;
+  #menus img {
+    width: 100px;
   }
-  .content p, .content label {
-    font-size: 4.2em;
+  #menus h2 {
+    font-size: 90px;
   }
-  .content a {
-    font-size: 4.7em;
+  #menus a {
+    font-size: 100px;
   }
   .prochainement, footer {
     font-size: 4.2em;
-  }
-  h2 {
-    font-size: 7.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
