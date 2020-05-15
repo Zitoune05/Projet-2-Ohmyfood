@@ -179,7 +179,7 @@ header h1 {
 main h2 {
   text-align: center;
   font-family: sans-serif;
-  font-size: 2.5em;
+  font-size: 20px;
   color: #353535;
   margin-top: 7%;
   margin-bottom: 10px;
@@ -260,7 +260,7 @@ h4:hover:before {
 
 .hr1, .hr2, .hr3 {
   /*ligne séparatrice*/
-  width: 30%;
+  width: 25.5%;
   height: auto;
 }
 
@@ -289,7 +289,8 @@ h4:hover:before {
 
 #enchante h4 {
   font-family: 'Bad Script', cursive;
-  font-size: 9.5px;
+  font-size: 15px;
+  font-weight: bold;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0 .7em;
@@ -297,12 +298,12 @@ h4:hover:before {
 
 #enchante p {
   font-family: 'Bad Script', cursive;
-  font-size: 5px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 #enchante p span {
-  font-size: 6.5px;
+  font-size: 13px;
   font-weight: bolder;
 }
 
@@ -325,15 +326,18 @@ h4:hover:before {
 }
 
 .head img {
-  width: 10%;
+  width: 15%;
 }
 
-.head label {
-  font-size: 7vw;
+.head h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 10;
   font-family: 'Zhi Mang Xing', cursive;
 }
 
-.footer {
+#footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,12 +349,12 @@ h4:hover:before {
           justify-content: center;
   text-align: center;
   font-family: 'Zhi Mang Xing', cursive;
-  font-size: 4vw;
+  font-size: 23px;
   padding-top: 10px;
 }
 
-.footer img {
-  width: 5%;
+#footer img {
+  width: 9%;
 }
 
 /*Page chic*/
@@ -705,6 +709,9 @@ footer {
     width: 285px;
     height: 348px;
   }
+  main h2 {
+    font-size: 30px;
+  }
   #menus img {
     width: 2.15em;
   }
@@ -718,17 +725,20 @@ footer {
     margin-bottom: 8em;
   }
   #menu h3 {
-    font-size: 3em;
+    font-size: 40px;
   }
   #menu h4 {
-    font-size: 1em;
+    font-size: 20px;
   }
   #menu p {
-    font-size: .7em;
+    font-size: 15px;
   }
   #menu p span {
-    font-size: .9em;
+    font-size: 17px;
     font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 30px;
   }
 }
 
@@ -752,17 +762,20 @@ footer {
     margin-bottom: 8em;
   }
   #menu h3 {
-    font-size: 4em;
+    font-size: 50px;
   }
   #menu h4 {
-    font-size: 1.4em;
+    font-size: 27px;
   }
   #menu p {
-    font-size: 1em;
+    font-size: 20px;
   }
   #menu p span {
-    font-size: 1.3em;
+    font-size: 21px;
     font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 40px;
   }
 }
 
@@ -773,21 +786,27 @@ footer {
     width: 340px;
     height: 415px;
   }
+  main h2 {
+    font-size: 40px;
+  }
   #menu {
     margin-bottom: 8em;
   }
   #menu h3 {
-    font-size: 5em;
+    font-size: 65px;
   }
   #menu h4 {
-    font-size: 1.7em;
+    font-size: 35px;
   }
   #menu p {
-    font-size: 1.3em;
+    font-size: 25px;
   }
   #menu p span {
-    font-size: 1.6em;
+    font-size: 27px;
     font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 50px;
   }
 }
 
@@ -797,6 +816,9 @@ footer {
     /*dimension et ombre des menus*/
     width: 28em;
     height: 34.18em;
+  }
+  main h2 {
+    font-size: 50px;
   }
   #menus img {
     width: 55px;
@@ -816,21 +838,27 @@ footer {
     width: 31em;
     height: 37.8em;
   }
+  main h2 {
+    font-size: 60px;
+  }
   #menu {
     margin-bottom: 12em;
   }
   #menu h3 {
-    font-size: 6em;
+    font-size: 80px;
   }
   #menu h4 {
-    font-size: 2em;
+    font-size: 45px;
   }
   #menu p {
-    font-size: 1.4em;
+    font-size: 30px;
   }
   #menu p span {
-    font-size: 1.7em;
+    font-size: 32px;
     font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 65px;
   }
 }
 
@@ -840,6 +868,9 @@ footer {
     /*dimension et ombre des menus*/
     width: 35em;
     height: 42.8em;
+  }
+  main h2 {
+    font-size: 75px;
   }
   #menus img {
     width: 60px;
@@ -865,6 +896,9 @@ footer {
     width: 42em;
     height: 51.3em;
   }
+  main h2 {
+    font-size: 80px;
+  }
   #menus img {
     width: 70px;
   }
@@ -878,17 +912,20 @@ footer {
     margin-bottom: 13em;
   }
   #menu h3 {
-    font-size: 7em;
+    font-size: 105px;
   }
   #menu h4 {
-    font-size: 2.6em;
+    font-size: 60px;
   }
   #menu p {
-    font-size: 1.8em;
+    font-size: 50px;
   }
   #menu p span {
-    font-size: 1.6em;
+    font-size: 52px;
     font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 90px;
   }
   .prochainement, footer {
     font-size: 4em;
@@ -901,6 +938,9 @@ footer {
     /*dimension et ombre des menus*/
     width: 50em;
     height: 61.3em;
+  }
+  main h2 {
+    font-size: 90px;
   }
   #menus img {
     width: 90px;
@@ -918,16 +958,20 @@ footer {
     margin-bottom: 17em;
   }
   #menu h3 {
-    font-size: 9em;
+    font-size: 120px;
   }
   #menu h4 {
-    font-size: 4.5em;
+    font-size: 75px;
   }
   #menu p {
-    font-size: 2.5em;
+    font-size: 60px;
   }
   #menu p span {
-    font-size: 2em;
+    font-size: 62px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 100px;
   }
 }
 
@@ -938,6 +982,9 @@ footer {
     width: 60em;
     height: 73.2em;
   }
+  main h2 {
+    font-size: 100px;
+  }
   #menus img {
     width: 100px;
   }
@@ -946,6 +993,25 @@ footer {
   }
   #menus a {
     font-size: 100px;
+  }
+  #menu {
+    margin-bottom: 17em;
+  }
+  #menu h3 {
+    font-size: 140px;
+  }
+  #menu h4 {
+    font-size: 95px;
+  }
+  #menu p {
+    font-size: 75px;
+  }
+  #menu p span {
+    font-size: 77px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 110px;
   }
   .prochainement, footer {
     font-size: 4.2em;
