@@ -155,7 +155,7 @@ h4{
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0;
     left: 0;
     border-radius: 50%;
@@ -190,7 +190,7 @@ h4{
 }
 
 .hr1,.hr2,.hr3{                       /*ligne séparatrice*/
-    width: 25.5%;
+    width: 25%;
     height: auto;
 }
 .hr2{
@@ -220,6 +220,11 @@ h4{
         margin-bottom: 0px;
         padding:0 .7em ;
     }
+    h3{
+        font-family: 'Zhi Mang Xing', cursive;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     p{
         font-family: 'Bad Script', cursive;
         font-size: 12px;
@@ -241,11 +246,8 @@ h4{
         width: 15%;
     }
     & h3{
-        margin-top: 0px;
-        margin-bottom: 0px;
         font-size: 30px;
         font-weight: 10;
-        font-family: 'Zhi Mang Xing', cursive;
     }
 }
 
@@ -567,7 +569,7 @@ main{
         font-size: 50px;
     }
     h4{
-        font-size: 27px;
+        font-size: 24px;
     }
     p{
         font-size:20px;
@@ -600,7 +602,7 @@ main{
         font-size: 65px;
     }
     h4{
-        font-size: 35px;
+        font-size: 32px;
     }
     p{
         font-size: 25px;
@@ -731,7 +733,7 @@ main{
         font-size: 105px;
     }
     h4{
-        font-size: 60px;
+        font-size: 57.5px;
     }
     p{
         font-size:50px;
@@ -782,7 +784,7 @@ main{
         font-size: 120px;
     }
     h4{
-        font-size: 75px;
+        font-size: 69px;
     }
     p{
         font-size:60px;
@@ -826,7 +828,7 @@ main{
         font-size: 140px;
     }
     h4{
-        font-size: 95px;
+        font-size: 82px;
     }
     p{
         font-size:75px;
