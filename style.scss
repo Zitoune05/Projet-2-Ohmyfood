@@ -130,15 +130,6 @@ header h1{
 /*-------------*/
 
 /* Police */
-main{
-    h2{
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: #353535;
-    margin-top: 7%;
-    margin-bottom: 10px;
-}}
 
 #menu{
     width: 90%;
@@ -146,7 +137,8 @@ main{
     box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
     margin: auto;
     cursor: default;
-    margin-bottom: 4em;  
+    margin-bottom: 4em; 
+    margin-top: 9%; 
     padding-bottom: 1.5em;
 }
 h4{
@@ -505,11 +497,7 @@ p{
         width: 285px;
         height: 348px;
 }
-main{
-    h2{
-        font-size: 30px;
-    }
-}
+
 #menus{
     img{
         width: 2.15em;
@@ -590,12 +578,7 @@ main{
 .menu_dimension_ombre{  /*dimension et ombre des menus*/
     width: 340px;
     height: 415px;
-}
-main{
-    h2{
-        font-size: 40px;
-    }
-}   
+}  
 #menu{ 
     margin-bottom: 8em;    
     h3{
@@ -624,11 +607,6 @@ main{
     width: 28em;
     height: 34.18em;
 }
-main{
-    h2{
-        font-size: 50px;
-    }
-}
 #menus {
     img{
         width: 55px;
@@ -646,11 +624,6 @@ main{
 .menu_dimension_ombre{  /*dimension et ombre des menus*/
     width: 31em;
     height: 37.8em;
-}
-main{
-    h2{
-        font-size: 60px;
-    }
 }
     #menu{ 
     margin-bottom: 12em;     
@@ -681,11 +654,6 @@ main{
     width: 35em;
     height: 42.8em;
 }
-main{
-    h2{
-        font-size: 75px;
-    }
-}
 #menus {
     img{
         width: 60px;
@@ -710,11 +678,6 @@ p{
 .menu_dimension_ombre{  /*dimension et ombre des menus*/
     width: 42em;
     height: 51.3em;
-}
-main{
-    h2{
-        font-size: 80px;
-    }
 }
 #menus {
     img{
@@ -758,11 +721,6 @@ main{
         width: 50em;
         height: 61.3em;
 }
-main{
-    h2{
-        font-size: 90px;
-    }
-}
 #menus {
     img{
         width: 90px;
@@ -805,11 +763,6 @@ main{
 .menu_dimension_ombre{  /*dimension et ombre des menus*/
     width: 60em;
     height: 73.2em;
-}
-main{
-    h2{
-        font-size: 100px;
-    }
 }
 #menus {
     img{
