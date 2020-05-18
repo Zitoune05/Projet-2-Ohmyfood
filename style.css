@@ -298,8 +298,7 @@ h4:hover:before {
 
 #enchante h3 {
   font-family: 'Zhi Mang Xing', cursive;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 #enchante p {
@@ -337,6 +336,7 @@ h4:hover:before {
 
 .head h3 {
   font-size: 30px;
+  font-weight: lighter;
 }
 
 #footer {

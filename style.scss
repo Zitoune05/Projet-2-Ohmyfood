@@ -222,8 +222,7 @@ h4{
     }
     h3{
         font-family: 'Zhi Mang Xing', cursive;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0px;
     }
     p{
         font-family: 'Bad Script', cursive;
@@ -247,6 +246,7 @@ h4{
     }
     & h3{
         font-size: 30px;
+        font-weight: lighter;
     }
 }
 
