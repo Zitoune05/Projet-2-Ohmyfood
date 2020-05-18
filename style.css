@@ -62,7 +62,7 @@ header h1 {
   margin-bottom: 10%;
 }
 
-.align {
+.scale {
   /*Alignement interieur des menus*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,25 +75,11 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30%;
-}
-
-.align div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*Animation scale + opacity*/
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.align div:hover {
+.scale:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: -webkit-transform 900ms;
