@@ -489,12 +489,12 @@ h4:hover:before {
   text-align: left;
 }
 
-#prochainement p {
+#prochainement h5 {
   /*Animation points de suspension*/
-  padding: .4em 1em;
+  padding: .4em 1.8em;
 }
 
-#prochainement p::after {
+#prochainement h5::after {
   display: inline-block;
   -webkit-animation: doty steps(1, end) 2000ms infinite;
           animation: doty steps(1, end) 2000ms infinite;
