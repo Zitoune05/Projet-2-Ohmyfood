@@ -374,8 +374,8 @@ h4{
     margin-right: auto;
     font-size: 15px;
     text-align: left;
-    p{                       /*Animation points de suspension*/
-        padding: .4em 1em;
+    h5{                       /*Animation points de suspension*/
+        padding: .4em 1.8em;
         &::after{           
             display: inline-block;
             animation: doty steps(1,end) 2000ms infinite;
