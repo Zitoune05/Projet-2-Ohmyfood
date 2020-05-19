@@ -472,7 +472,23 @@ footer{                         /*position mention legale + contact dans footer 
     }
 }
 
-
+/* Si la taille de l'écran est de 379 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 379px){
+    #menus{
+        article{             /*dimension des menus*/
+            width: 285px;
+            height: 348px;
+        }
+        img{
+            width: 2em;
+        }
+        h2{
+            font-size: 1.50em;
+        }
+        a{
+            font-size: 28px;
+        }}
+}
 /* Si la taille de l'écran est de 570 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 570px){
 #prochainement{
