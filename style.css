@@ -672,6 +672,24 @@ footer a {
   font-size: 3vh;
 }
 
+/* Si la taille de l'écran est de 379 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 379px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 285px;
+    height: 348px;
+  }
+  #menus img {
+    width: 2em;
+  }
+  #menus h2 {
+    font-size: 1.50em;
+  }
+  #menus a {
+    font-size: 28px;
+  }
+}
+
 /* Si la taille de l'écran est de 570 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 570px) {
   #prochainement {
