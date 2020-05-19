@@ -15,7 +15,7 @@ header h1 {
 }
 
 /*Logo ohmyfood*/
-.logo {
+#logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,19 +41,7 @@ header h1 {
       justify-content: space-around;
 }
 
-#menus img {
-  width: 30px;
-}
-
-#menus h2 {
-  font-size: 17px;
-}
-
-#menus a {
-  font-size: 20px;
-}
-
-.menu_dimension_ombre {
+#menus article {
   /*dimension et ombre des menus*/
   width: 190px;
   height: 232px;
@@ -62,7 +50,7 @@ header h1 {
   margin-bottom: 10%;
 }
 
-.scale {
+#menus article div {
   /*Alignement interieur des menus*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,12 +62,15 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30%;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.scale:hover {
+#menus article div:hover * {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: -webkit-transform 900ms;
@@ -87,6 +78,19 @@ header h1 {
   transition: transform 900ms;
   transition: transform 900ms, -webkit-transform 900ms;
   opacity: 0.7;
+}
+
+#menus img {
+  width: 30px;
+}
+
+#menus h2 {
+  font-size: 17px;
+}
+
+#menus a {
+  text-decoration: none;
+  font-size: 20px;
 }
 
 #menu-enchante {
@@ -476,7 +480,7 @@ h4:hover:before {
 }
 
 /*Prochainement*/
-.prochainement {
+#prochainement {
   border-radius: 15px;
   width: 9em;
   margin-bottom: 4em;
@@ -486,12 +490,12 @@ h4:hover:before {
   text-align: left;
 }
 
-.loading {
+#prochainement p {
   /*Animation points de suspension*/
   padding: .4em 1em;
 }
 
-.loading::after {
+#prochainement p::after {
   display: inline-block;
   -webkit-animation: doty steps(1, end) 2000ms infinite;
           animation: doty steps(1, end) 2000ms infinite;
@@ -534,11 +538,6 @@ h4:hover:before {
   }
 }
 
-/*classe soulignement off*/
-.lien-underline {
-  text-decoration: none;
-}
-
 /*classes Couleur*/
 .jaune {
   color: #fcca46;
@@ -551,11 +550,12 @@ h4:hover:before {
 /*-------*/
 /*Footer*/
 /*-------*/
-footer div {
+footer a {
+  text-decoration: none;
   /*animation mentions légales + contact au survol effet wiggle*/
 }
 
-footer div:hover {
+footer a:hover {
   -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
           animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
@@ -650,7 +650,7 @@ footer {
   bottom: 0;
 }
 
-.infos-position {
+footer a {
   padding: .7em  0.5em;
 }
 
@@ -675,7 +675,7 @@ footer {
 
 /* Si la taille de l'écran est de 570 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 570px) {
-  .prochainement {
+  #prochainement {
     width: 9em;
     font-size: 2.3em;
   }
@@ -685,8 +685,8 @@ footer {
   p {
     font-size: 1em;
   }
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
+  #menus article {
+    /*dimension des menus*/
     width: 285px;
     height: 348px;
   }
@@ -722,8 +722,8 @@ footer {
 
 /* Si la taille de l'écran est de 768 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 768px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
+  #menus article {
+    /*dimension des menus*/
     width: 310px;
     height: 378px;
   }
@@ -759,10 +759,9 @@ footer {
 
 /* Si la taille de l'écran est de 930 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 930px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
-    width: 340px;
-    height: 415px;
+  #menus article {
+    width: 348px;
+    height: 424px;
   }
   #menu {
     margin-bottom: 8em;
@@ -787,8 +786,8 @@ footer {
 
 /* Si la taille de l'écran est de 1021 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 1021px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
+  #menus article {
+    /*dimension des menus*/
     width: 28em;
     height: 34.18em;
   }
@@ -805,10 +804,10 @@ footer {
 
 /* Si la taille de l'écran est de 1335 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 1335px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
-    width: 31em;
-    height: 37.8em;
+  #menus article {
+    /*dimension des menus*/
+    width: 33em;
+    height: 40.2em;
   }
   #menu {
     margin-bottom: 12em;
@@ -833,8 +832,8 @@ footer {
 
 /* Si la taille de l'écran est de 1440 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 1444px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
+  #menus article {
+    /*dimension des menus*/
     width: 35em;
     height: 42.8em;
   }
@@ -847,7 +846,7 @@ footer {
   #menus a {
     font-size: 60px;
   }
-  .prochainement, footer {
+  #prochainement, footer {
     font-size: 3em;
   }
   p {
@@ -857,10 +856,10 @@ footer {
 
 /* Si la taille de l'écran est de 1680 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 1680px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
-    width: 42em;
-    height: 51.3em;
+  #menus article {
+    /*dimension des menus*/
+    width: 45em;
+    height: 54.8em;
   }
   #menus img {
     width: 70px;
@@ -890,15 +889,15 @@ footer {
   #menu #footer label {
     font-size: 90px;
   }
-  .prochainement, footer {
+  #prochainement, footer {
     font-size: 4em;
   }
 }
 
 /* Si la taille de l'écran est de 2020 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 2020px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
+  #menus article {
+    /*dimension des menus*/
     width: 50em;
     height: 61.3em;
   }
@@ -911,7 +910,7 @@ footer {
   #menus a {
     font-size: 90px;
   }
-  .prochainement, footer {
+  #prochainement, footer {
     font-size: 4.6em;
   }
   #menu {
@@ -937,8 +936,8 @@ footer {
 
 /* Si la taille de l'écran est de 2403 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 2403px) {
-  .menu_dimension_ombre {
-    /*dimension et ombre des menus*/
+  #menus article {
+    /*dimension des menus*/
     width: 60em;
     height: 73.2em;
   }
@@ -970,7 +969,7 @@ footer {
   #menu #footer label {
     font-size: 110px;
   }
-  .prochainement, footer {
+  #prochainement, footer {
     font-size: 4.2em;
   }
 }
