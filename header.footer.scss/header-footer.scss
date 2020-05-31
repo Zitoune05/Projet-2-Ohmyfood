@@ -1,0 +1,69 @@
+/*-------*/
+/*header*/
+/*-------*/
+
+/*H1*/
+header h1{
+    display: none;
+}
+
+/*Logo ohmyfood*/
+@mixin marge {
+    margin-left: auto;
+    margin-right: auto;  
+}
+#logo{
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include marge;
+}
+/*-------*/
+/*Footer*/
+/*-------*/
+
+footer{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    a{
+        padding: .7em  0.5em ;
+        text-decoration: none;                         /*animation mentions légales + contact au survol effet wiggle*/    
+    &:hover{                   
+            animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+}}}
+
+@keyframes shake-top {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 0;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+}

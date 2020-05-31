@@ -1,0 +1,70 @@
+/*Page chic*/
+.pink- {
+  background-color: #fff5fe;
+}
+
+.violet {
+  color: #a56799;
+}
+
+.orange {
+  color: #c67412;
+}
+
+.bleu {
+  color: #6e4ccc;
+}
+
+#chic {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chic h4 {
+  font-family: 'PT Serif', serif;
+  font-size: 8.2px;
+}
+
+#chic h3 {
+  background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 64%, #6e4ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+  font-family: "Oleo Script", cursive;
+}
+
+#chic p {
+  font-family: "PT Serif", serif;
+  font-size: 6px;
+  font-weight: bold;
+  margin: 6.5px 0;
+}
+
+#chic p span {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#chic .bleu div {
+  margin: 15px 0;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10% 0;
+}
+/*# sourceMappingURL=chic.css.map */
