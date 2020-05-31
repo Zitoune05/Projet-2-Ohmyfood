@@ -378,6 +378,11 @@ body {
   margin-bottom: 10%;
 }
 
+#menus article h2 {
+  text-align: center;
+  width: 95%;
+}
+
 #menus article a {
   /*Alignement interieur des menus*/
   display: -webkit-box;
@@ -390,7 +395,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
