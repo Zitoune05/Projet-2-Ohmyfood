@@ -33,7 +33,7 @@ $font-bad-script:'Bad Script', cursive;
     margin-right: auto;  
 }
 #menus{
-    padding-top: 9%;
+    padding-top: 7%;
     display: flex;   
     flex-wrap: wrap;
     justify-content: space-around;
@@ -551,6 +551,8 @@ p{
     article{  /*dimension des menus*/
         width: 60em;
         height: 73.2em;
+        margin-left: 10em;
+        margin-right: 10em;
     }
     img{
         width: 100px;
@@ -585,6 +587,6 @@ p{
 }
 
 #prochainement, footer{
-    font-size: 4.2em;
+    font-size: 3.8em;
 }
 }

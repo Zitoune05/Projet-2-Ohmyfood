@@ -359,7 +359,7 @@ body {
 /*----Menus-index----*/
 /*-------------------*/
 #menus {
-  padding-top: 9%;
+  padding-top: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,6 +956,8 @@ h4:hover:before {
     /*dimension des menus*/
     width: 60em;
     height: 73.2em;
+    margin-left: 10em;
+    margin-right: 10em;
   }
   #menus img {
     width: 100px;
@@ -986,7 +988,7 @@ h4:hover:before {
     font-size: 110px;
   }
   #prochainement, footer {
-    font-size: 4.2em;
+    font-size: 3.8em;
   }
 }
 /*# sourceMappingURL=style.css.map */
