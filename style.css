@@ -378,6 +378,11 @@ body {
   margin-bottom: 10%;
 }
 
+#menus article h2 {
+  text-align: center;
+  width: 95%;
+}
+
 #menus article a {
   /*Alignement interieur des menus*/
   display: -webkit-box;
@@ -390,7 +395,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -711,7 +715,7 @@ h4:hover:before {
     width: 2.15em;
   }
   #menus h2 {
-    font-size: 1.65em;
+    font-size: 1.45em;
   }
   #menus p {
     font-size: 35px;
@@ -748,7 +752,7 @@ h4:hover:before {
     width: 2.5em;
   }
   #menus h2 {
-    font-size: 1.7em;
+    font-size: 1.53em;
   }
   #menus p {
     font-size: 40px;
@@ -815,7 +819,7 @@ h4:hover:before {
     width: 55px;
   }
   #menus h2 {
-    font-size: 45px;
+    font-size: 42px;
   }
   #menus p {
     font-size: 55px;
@@ -861,7 +865,7 @@ h4:hover:before {
     width: 60px;
   }
   #menus h2 {
-    font-size: 50px;
+    font-size: 47px;
   }
   #menus p {
     font-size: 60px;
@@ -885,7 +889,7 @@ h4:hover:before {
     width: 70px;
   }
   #menus h2 {
-    font-size: 60px;
+    font-size: 55px;
   }
   #menus p {
     font-size: 70px;
@@ -925,7 +929,7 @@ h4:hover:before {
     width: 90px;
   }
   #menus h2 {
-    font-size: 80px;
+    font-size: 75px;
   }
   #menus p {
     font-size: 90px;
@@ -967,7 +971,7 @@ h4:hover:before {
     width: 100px;
   }
   #menus h2 {
-    font-size: 76.5px;
+    font-size: 71px;
   }
   #menus p {
     font-size: 85px;
