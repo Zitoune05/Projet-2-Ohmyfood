@@ -1,0 +1,31 @@
+/*Page goût*/
+$font-bad-script:'Bad Script', cursive;
+$font-Kaushan:'Kaushan Script', cursive;
+
+.bg-gout{
+    background-color: #fdfffd;
+}
+#gout{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    h3{
+        background: linear-gradient(135deg, rgba(73,156,64,1) 0%, rgba(149,220,105,1) 58%, rgba(190,225,127,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $font-Kaushan;
+    }
+    h4{
+       font-family: $font-bad-script;
+       font-size: 11px; 
+    }
+    p{
+        font-weight: bold;
+        font-size: 7px;
+        font-family: $font-bad-script;
+        span{
+            font-size: 9px;
+        }
+    }
+}

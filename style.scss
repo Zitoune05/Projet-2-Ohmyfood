@@ -1,10 +1,26 @@
+@import "pages/chic.scss";
+@import "pages/papilles.scss";
+@import "pages/gout.scss";
+@import "pages/enchantée.scss";
+
 body{
     width: 100%;
     height: auto;   
     margin: 0;
     background-color: #ffffff;
 }
+/*-------------*/
+/*Polices pages*/
+/*-------------*/
 
+$font-oleo:'Oleo Script', cursive;
+$font-PT-serif:'PT Serif', serif;
+$font-ZhiMangXing:'Zhi Mang Xing', cursive;
+$font-Short-Stack:'Short Stack', cursive;
+$font-Dancing-script:'Dancing Script', cursive; 
+$font-Caveat:'Caveat', cursive;
+$font-Kaushan:'Kaushan Script', cursive;
+$font-bad-script:'Bad Script', cursive;
 /*-------*/
 /*header*/
 /*-------*/
@@ -15,21 +31,27 @@ header h1{
 }
 
 /*Logo ohmyfood*/
+@mixin marge {
+    margin-left: auto;
+    margin-right: auto;  
+}
 #logo{
     display: flex;
     max-width: 50%;
     height: auto;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    @include marge;
 }
 
 /*-------------------*/
 /*----Menus-index----*/
 /*-------------------*/
 
-
+@mixin marge {
+    margin-left: auto;
+    margin-right: auto;  
+}
 #menus{
     padding-top: 9%;
     display: flex;   
@@ -40,13 +62,14 @@ header h1{
             height: 232px;
             box-shadow: 0px 0px 5px 2px rgb(207, 201, 207);
             margin-bottom: 10%;    
-        div{                            /*Alignement interieur des menus*/
+        a{                            /*Alignement interieur des menus*/
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 30%; 
         transform: scale(1);
+        text-decoration: none;
             &:hover *{
                 transform: scale(1.3);
                 transition: transform 900ms;
@@ -60,24 +83,30 @@ header h1{
     h2{
         font-size: 17px;
     }
-    a{
-        text-decoration: none;
+    p{
+        margin-top: 0px;
         font-size: 20px;
     }
 }
 
-#menu-enchante{                         /*Menu la note enchantée*/
+
+$color-maroon:#3d1319;              /*Menu la note enchantée*/
+#menu-enchante{                         
     background: #fcdfdb; 
     & h2{
         margin-top: 0px;
-        font-family: 'Zhi Mang Xing', cursive;
-        color: #3d1319;
-        font-weight: 500;
+        color: $color-maroon;
+        font:{
+            family: $font-ZhiMangXing;
+            weight: 500;
         }
-    & a{
-        color: #3d1319;
-        font-weight: bold;
-        font-family: 'Short Stack', cursive;
+    }
+    & p{
+        color: $color-maroon;
+        font:{
+            weight: bold;
+            family: $font-Short-Stack;
+        }
     }
 }
 
@@ -87,11 +116,11 @@ header h1{
         background: linear-gradient(135deg, rgba(224,136,29,1) 0%, rgba(171,106,179,1) 58%, rgba(143,90,225,1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: 'Oleo Script', cursive;
+        font-family: $font-oleo;
         }
-    & a{
+    & p{
         color: #c77412;
-        font-family: 'PT Serif', serif;
+        font-family: $font-PT-serif;
         }
 }
 #menu-papille{                         /*Menu le délice des papilles*/
@@ -100,11 +129,11 @@ header h1{
         background: linear-gradient(100deg, rgba(2,41,221,1) 0%, rgba(4,83,234,1) 58%, rgba(68,163,251,1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: 'Dancing Script', cursive;
+        font-family: $font-Dancing-script;
     }
-    & a{
+    & p{
         color: #0887fb;
-        font-family: 'Caveat', cursive;
+        font-family: $font-Caveat;
     }
 }
 #menu-gout{                         /*Menu la palette du goût*/
@@ -113,19 +142,17 @@ header h1{
     background: linear-gradient(135deg, rgba(73,156,64,1) 0%, rgba(149,220,105,1) 58%, rgba(190,225,127,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Kaushan Script', cursive;
+    font-family: $font-Kaushan;
     }
-    & a{
+    & p{
         color: #72bf56;
-        font-family: 'Caveat', cursive;
+        font-family: $font-Caveat;
     }
 }
 
 /*-------------*/
 /*menu-pages*/
 /*-------------*/
-
-/* Police */
 
 #menu{
     width: 90%;
@@ -189,188 +216,12 @@ h4{
     transform: rotateY(180deg) ;
 }
 
-
-/*page enchantée*/
-.pink{
-    background: #fcdfdb; 
-}
-#enchante{
-    width: 88%;
-    color: #3d1319;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5%;
-    h4{
-        font-family: 'Bad Script', cursive;
-        font-size: 15px;
-        font-weight: bold;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding:0 .7em ;
-    }
-    h3{
-        font-family: 'Zhi Mang Xing', cursive;
-        margin: 0px;
-    }
-    p{
-        font-family: 'Bad Script', cursive;
-        font-size: 12px;
-        font-weight: bold;
-        span{
-            font-size: 13px;
-            font-weight: bolder;
-        }  
-    }
-}
-.head{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 5% 0;
-    & img{
-        width: 15%;
-    }
-    & h3{
-        font-size: 30px;
-        font-weight: lighter;
-    }
-}
-
-#footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Zhi Mang Xing', cursive;
-    font-size: 23px;
-    padding-top: 10px;
-    img{
-        width: 9%;
-    }
-}
-
-
-/*Page chic*/
-.pink-{
-    background-color: #fff5fe;
-}
-.violet{
-    color:#a56799;
-}
-.orange{
-    color: #c67412;
-}
-.bleu{
-    color: #6e4ccc;
-}
-
-#chic{
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    h4{
-        font-family: 'PT Serif', serif;
-        font-size: 8.2px;
-    }
-    h3{
-        background: linear-gradient(135deg, rgba(224,136,29,1) 0%, rgba(171,106,179,1) 64%, #6e4ccc 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: lighter;
-        font-family: 'Oleo Script', cursive;  
-    }
-    p{
-        font-family: 'PT Serif', serif;
-        font-size: 6px;
-        font-weight: bold;
-        margin: 6.5px 0;
-        span{
-            font-size: 8px;
-            font-weight: bold;
-        }  
-    }
-    .bleu{
-        div{
-            margin: 15px 0;
-        }
-    }
-}
-.head{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 10% 0;
-}
-
-/*Page papille*/
-.bg-papille{
-    background-color: #f9f9f9;
-}
-#papille{
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    h3{
-        background: linear-gradient(100deg, rgba(2,41,221,1) 0%, #0453ea 20%, rgba(68,163,251,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: 'Dancing Script', cursive; 
-        font-weight: lighter;
-    }
-    h4{
-       font-family: 'Bad Script', cursive;
-       font-size: 11px; 
-    }
-    p{
-        font-weight: bold;
-        font-size: 7px;
-        font-family: 'Bad Script', cursive;
-        span{
-            font-size: 9px;
-        }
-    }
-}
-/*Page goût*/
-.bg-gout{
-    background-color: #fdfffd;;
-}
-#gout{
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    h3{
-        background: linear-gradient(135deg, rgba(73,156,64,1) 0%, rgba(149,220,105,1) 58%, rgba(190,225,127,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: 'Kaushan Script', cursive;
-    }
-    h4{
-       font-family: 'Bad Script', cursive;
-       font-size: 11px; 
-    }
-    p{
-        font-weight: bold;
-        font-size: 7px;
-        font-family: 'Bad Script', cursive;
-        span{
-            font-size: 9px;
-        }
-    }
-}
-
 /*Prochainement*/
 #prochainement {
     border-radius: 15px;
     width: 9em;
     margin-bottom: 4em;
-    margin-left: auto;
-    margin-right: auto;
+    @include marge;
     font-size: 15px;
     text-align: left;
     h5{                       /*Animation points de suspension*/
@@ -485,7 +336,7 @@ footer{                         /*position mention legale + contact dans footer 
         h2{
             font-size: 1.50em;
         }
-        a{
+        p{
             font-size: 28px;
         }}
 }
@@ -495,7 +346,7 @@ footer{                         /*position mention legale + contact dans footer 
     width: 9em;
     font-size: 2.3em;
     }
-button, footer{
+footer{
     font-size: 2em;
     }
 p{
@@ -512,7 +363,7 @@ p{
     h2{
         font-size: 1.65em;
     }
-    a{
+    p{
         font-size: 35px;
     }
 }
@@ -554,7 +405,7 @@ p{
     h2{
         font-size: 1.7em;
     }
-    a{
+    p{
         font-size: 40px;
     }
 }
@@ -623,7 +474,7 @@ p{
     h2{
         font-size: 45px;
     }
-    a{
+    p{
         font-size: 55px;
     }
 }
@@ -673,7 +524,7 @@ p{
     h2{
         font-size: 50px;
     }
-    a{
+    p{
         font-size: 60px;
     }
 }
@@ -698,7 +549,7 @@ p{
     h2{
         font-size: 60px;
     }
-    a{
+    p{
         font-size: 70px;
     }
 }
@@ -740,7 +591,7 @@ p{
     h2{
         font-size: 80px;
     }
-    a{
+    p{
         font-size: 90px;
     }
 }
@@ -783,7 +634,7 @@ p{
     h2{
         font-size: 90px;
     }
-    a{
+    p{
         font-size: 100px;
     }
 }

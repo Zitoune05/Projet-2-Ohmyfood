@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*page enchantée*/
+.pink {
+  background: #fcdfdb;
+}
+
+#enchante {
+  width: 88%;
+  color: #3d1319;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+
+#enchante h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0 .7em;
+}
+
+#enchante h3 {
+  font-family: "Zhi Mang Xing", cursive;
+  margin: 0px;
+}
+
+#enchante p {
+  font-family: "Bad Script", cursive;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#enchante p span {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.head img {
+  width: 15%;
+}
+
+.head h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Zhi Mang Xing", cursive;
+  font-size: 23px;
+  padding-top: 10px;
+}
+
+#footer img {
+  width: 9%;
+}
+/*# sourceMappingURL=enchantée.css.map */

@@ -1,0 +1,34 @@
+/*Page papille*/
+.bg-papille {
+  background-color: #f9f9f9;
+}
+
+#papille {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#papille h3 {
+  background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+}
+
+#papille h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 11px;
+}
+
+#papille p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: "Bad Script", cursive;
+}
+
+#papille p span {
+  font-size: 9px;
+}
+/*# sourceMappingURL=papilles.css.map */
