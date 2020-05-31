@@ -354,7 +354,10 @@ p{
             font-size: 40px;
         }
     }
-}   
+} 
+#prochainement, footer{
+    font-size: 1.5em;
+}  
 }
 /* Si la taille de l'écran est de 930 pixels ou plus, définir comme ci-dessous*/
 @media only screen and (min-width: 930px){
