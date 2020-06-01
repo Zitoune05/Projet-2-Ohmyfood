@@ -69,73 +69,6 @@
   padding: 10% 0;
 }
 
-/*Page papille*/
-.bg-papille {
-  background-color: #f9f9f9;
-}
-
-#papille {
-  width: 88%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#papille h3 {
-  background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Dancing Script", cursive;
-  font-weight: lighter;
-}
-
-#papille h4 {
-  font-family: "Bad Script", cursive;
-  font-size: 11px;
-}
-
-#papille p {
-  font-weight: bold;
-  font-size: 7px;
-  font-family: "Bad Script", cursive;
-}
-
-#papille p span {
-  font-size: 9px;
-}
-
-/*Page goût*/
-.bg-gout {
-  background-color: #fdfffd;
-}
-
-#gout {
-  width: 88%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#gout h3 {
-  background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Kaushan Script", cursive;
-}
-
-#gout h4 {
-  font-family: "Bad Script", cursive;
-  font-size: 11px;
-}
-
-#gout p {
-  font-weight: bold;
-  font-size: 7px;
-  font-family: "Bad Script", cursive;
-}
-
-#gout p span {
-  font-size: 9px;
-}
-
 /*page enchantée*/
 .pink {
   background: #fcdfdb;
@@ -219,6 +152,73 @@
 
 #footer img {
   width: 9%;
+}
+
+/*Page goût*/
+.bg-gout {
+  background-color: #fdfffd;
+}
+
+#gout {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gout h3 {
+  background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+
+#gout h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 11px;
+}
+
+#gout p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: "Bad Script", cursive;
+}
+
+#gout p span {
+  font-size: 9px;
+}
+
+/*Page papille*/
+.bg-papille {
+  background-color: #f9f9f9;
+}
+
+#papille {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#papille h3 {
+  background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+}
+
+#papille h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 11px;
+}
+
+#papille p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: "Bad Script", cursive;
+}
+
+#papille p span {
+  font-size: 9px;
 }
 
 /*-------*/

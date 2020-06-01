@@ -1,0 +1,1002 @@
+@charset "UTF-8";
+/*Page chic*/
+.pink- {
+  background-color: #fff5fe;
+}
+
+.violet {
+  color: #a56799;
+}
+
+.orange {
+  color: #c67412;
+}
+
+.bleu {
+  color: #6e4ccc;
+}
+
+#chic {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chic h4 {
+  font-family: 'PT Serif', serif;
+  font-size: 8.2px;
+}
+
+#chic h3 {
+  background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 64%, #6e4ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+  font-family: "Oleo Script", cursive;
+}
+
+#chic p {
+  font-family: "PT Serif", serif;
+  font-size: 6px;
+  font-weight: bold;
+  margin: 6.5px 0;
+}
+
+#chic p span {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#chic .bleu div {
+  margin: 15px 0;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10% 0;
+}
+
+/*page enchantée*/
+.pink {
+  background: #fcdfdb;
+}
+
+#enchante {
+  width: 88%;
+  color: #3d1319;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+
+#enchante h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0 .7em;
+}
+
+#enchante h3 {
+  font-family: "Zhi Mang Xing", cursive;
+  margin: 0px;
+}
+
+#enchante p {
+  font-family: "Bad Script", cursive;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#enchante p span {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.head img {
+  width: 15%;
+}
+
+.head h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Zhi Mang Xing", cursive;
+  font-size: 23px;
+  padding-top: 10px;
+}
+
+#footer img {
+  width: 9%;
+}
+
+/*Page goût*/
+.bg-gout {
+  background-color: #fdfffd;
+}
+
+#gout {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gout h3 {
+  background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+
+#gout h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 11px;
+}
+
+#gout p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: "Bad Script", cursive;
+}
+
+#gout p span {
+  font-size: 9px;
+}
+
+/*Page papille*/
+.bg-papille {
+  background-color: #f9f9f9;
+}
+
+#papille {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#papille h3 {
+  background: linear-gradient(100deg, #0229dd 0%, #0453ea 20%, #44a3fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+}
+
+#papille h4 {
+  font-family: "Bad Script", cursive;
+  font-size: 11px;
+}
+
+#papille p {
+  font-weight: bold;
+  font-size: 7px;
+  font-family: "Bad Script", cursive;
+}
+
+#papille p span {
+  font-size: 9px;
+}
+
+/*-------*/
+/*header*/
+/*-------*/
+/*H1*/
+header h1 {
+  display: none;
+}
+
+/*Logo ohmyfood*/
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-------*/
+/*Footer*/
+/*-------*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  padding: .7em  0.5em;
+  text-decoration: none;
+  /*animation mentions légales + contact au survol effet wiggle*/
+}
+
+footer a:hover {
+  -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+          animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@-webkit-keyframes shake-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes shake-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/*-------------*/
+/*Polices pages*/
+/*-------------*/
+/*-------------------*/
+/*----Menus-index----*/
+/*-------------------*/
+#menus {
+  padding-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#menus article {
+  /*dimension et ombre des menus*/
+  width: 190px;
+  height: 232px;
+  -webkit-box-shadow: 0px 0px 5px 2px #cfc9cf;
+          box-shadow: 0px 0px 5px 2px #cfc9cf;
+  margin-bottom: 10%;
+}
+
+#menus article h2 {
+  text-align: center;
+  width: 95%;
+}
+
+#menus article a {
+  /*Alignement interieur des menus*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  text-decoration: none;
+}
+
+#menus article a:hover * {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: -webkit-transform 900ms;
+  transition: -webkit-transform 900ms;
+  transition: transform 900ms;
+  transition: transform 900ms, -webkit-transform 900ms;
+  opacity: 0.7;
+}
+
+#menus img {
+  width: 30px;
+}
+
+#menus h2 {
+  font-size: 17px;
+}
+
+#menus p {
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+/*Menu la note enchantée*/
+#menu-enchante {
+  background: #fcdfdb;
+}
+
+#menu-enchante h2 {
+  margin-top: 0px;
+  color: #3d1319;
+  font-family: "Zhi Mang Xing", cursive;
+  font-weight: 500;
+}
+
+#menu-enchante p {
+  color: #3d1319;
+  font-weight: bold;
+  font-family: "Short Stack", cursive;
+}
+
+#menu-chic {
+  /*Menu le chic à la française*/
+  background-color: #fff5fe;
+}
+
+#menu-chic h2 {
+  background: linear-gradient(135deg, #e0881d 0%, #ab6ab3 58%, #8f5ae1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oleo Script", cursive;
+}
+
+#menu-chic p {
+  color: #c77412;
+  font-family: "PT Serif", serif;
+}
+
+#menu-papille {
+  /*Menu le délice des papilles*/
+  background-color: #f9f9f9;
+}
+
+#menu-papille h2 {
+  background: linear-gradient(100deg, #0229dd 0%, #0453ea 58%, #44a3fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+}
+
+#menu-papille p {
+  color: #0887fb;
+  font-family: "Caveat", cursive;
+}
+
+#menu-gout {
+  /*Menu la palette du goût*/
+  background: #fdfffd;
+}
+
+#menu-gout h2 {
+  background: linear-gradient(135deg, #499c40 0%, #95dc69 58%, #bee17f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+
+#menu-gout p {
+  color: #72bf56;
+  font-family: "Caveat", cursive;
+}
+
+/*-------------*/
+/*menu-pages*/
+/*-------------*/
+#menu {
+  width: 90%;
+  height: auto;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
+          box-shadow: 0px 1px 15px 1px rgba(184, 179, 179, 0.897);
+  margin: auto;
+  cursor: default;
+  margin-bottom: 4em;
+  margin-top: 9%;
+  padding-bottom: 1.5em;
+}
+
+h4 {
+  position: relative;
+}
+
+h4:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fcca46;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h4:hover:before {
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.filtre-dimension {
+  margin: auto;
+  width: 80%;
+}
+
+.marge-basse {
+  margin-bottom: 10px;
+}
+
+.petit-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plats-prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hr1, .hr2, .hr3 {
+  /*ligne séparatrice*/
+  width: 25%;
+  height: auto;
+}
+
+.hr2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.hr3 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/*Prochainement*/
+#prochainement {
+  border-radius: 15px;
+  width: 9em;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  text-align: left;
+}
+
+#prochainement h5 {
+  /*Animation points de suspension*/
+  padding: .4em 1.8em;
+}
+
+#prochainement h5::after {
+  display: inline-block;
+  -webkit-animation: doty steps(1, end) 2000ms infinite;
+          animation: doty steps(1, end) 2000ms infinite;
+  content: '...';
+}
+
+@-webkit-keyframes doty {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
+}
+
+@keyframes doty {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
+}
+
+/*classes Couleur*/
+.jaune {
+  color: #fcca46;
+}
+
+.bleu-vert {
+  background-color: #569c87;
+}
+
+/*page mentions légales*/
+#mentions-legales {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+#mentions-legales #titre {
+  font-size: 5vw;
+  text-align: center;
+  color: #f7cd54;
+}
+
+#mentions-legales p {
+  text-align: justify;
+  font-size: 3vh;
+}
+
+/* Si la taille de l'écran est de 379 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 379px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 285px;
+    height: 348px;
+  }
+  #menus img {
+    width: 2em;
+  }
+  #menus h2 {
+    font-size: 1.50em;
+  }
+  #menus p {
+    font-size: 28px;
+  }
+}
+
+/* Si la taille de l'écran est de 570 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 570px) {
+  #prochainement {
+    width: 9em;
+    font-size: 2.3em;
+  }
+  footer {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  #menus article {
+    /*dimension des menus*/
+    width: 285px;
+    height: 348px;
+  }
+  #menus img {
+    width: 2.15em;
+  }
+  #menus h2 {
+    font-size: 1.45em;
+  }
+  #menus p {
+    font-size: 35px;
+  }
+  #menu {
+    margin-bottom: 8em;
+  }
+  #menu h3 {
+    font-size: 40px;
+  }
+  #menu h4 {
+    font-size: 20px;
+  }
+  #menu p {
+    font-size: 15px;
+  }
+  #menu p span {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 30px;
+  }
+}
+
+/* Si la taille de l'écran est de 768 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 768px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 310px;
+    height: 378px;
+  }
+  #menus img {
+    width: 2.5em;
+  }
+  #menus h2 {
+    font-size: 1.53em;
+  }
+  #menus p {
+    font-size: 40px;
+  }
+  #menu {
+    margin-bottom: 8em;
+  }
+  #menu h3 {
+    font-size: 50px;
+  }
+  #menu h4 {
+    font-size: 24px;
+  }
+  #menu p {
+    font-size: 20px;
+  }
+  #menu p span {
+    font-size: 21px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 40px;
+  }
+  #prochainement, footer {
+    font-size: 1.5em;
+  }
+}
+
+/* Si la taille de l'écran est de 930 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 930px) {
+  #menus article {
+    width: 348px;
+    height: 424px;
+  }
+  #menu {
+    margin-bottom: 8em;
+  }
+  #menu h3 {
+    font-size: 65px;
+  }
+  #menu h4 {
+    font-size: 32px;
+  }
+  #menu p {
+    font-size: 25px;
+  }
+  #menu p span {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 50px;
+  }
+}
+
+/* Si la taille de l'écran est de 1021 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1021px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 28em;
+    height: 34.18em;
+  }
+  #menus img {
+    width: 55px;
+  }
+  #menus h2 {
+    font-size: 42px;
+  }
+  #menus p {
+    font-size: 55px;
+  }
+}
+
+/* Si la taille de l'écran est de 1335 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1335px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 33em;
+    height: 40.2em;
+  }
+  #menu {
+    margin-bottom: 12em;
+  }
+  #menu h3 {
+    font-size: 80px;
+  }
+  #menu h4 {
+    font-size: 45px;
+  }
+  #menu p {
+    font-size: 30px;
+  }
+  #menu p span {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 65px;
+  }
+}
+
+/* Si la taille de l'écran est de 1440 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1444px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 35em;
+    height: 42.8em;
+  }
+  #menus img {
+    width: 60px;
+  }
+  #menus h2 {
+    font-size: 47px;
+  }
+  #menus p {
+    font-size: 60px;
+  }
+  #prochainement, footer {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Si la taille de l'écran est de 1680 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 1680px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 45em;
+    height: 54.8em;
+  }
+  #menus img {
+    width: 70px;
+  }
+  #menus h2 {
+    font-size: 55px;
+  }
+  #menus p {
+    font-size: 70px;
+  }
+  #menu {
+    margin-bottom: 13em;
+  }
+  #menu h3 {
+    font-size: 105px;
+  }
+  #menu h4 {
+    font-size: 57.5px;
+  }
+  #menu p {
+    font-size: 50px;
+  }
+  #menu p span {
+    font-size: 52px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 90px;
+  }
+  #prochainement, footer {
+    font-size: 4em;
+  }
+}
+
+/* Si la taille de l'écran est de 2020 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 2020px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 50em;
+    height: 61.3em;
+  }
+  #menus img {
+    width: 90px;
+  }
+  #menus h2 {
+    font-size: 75px;
+  }
+  #menus p {
+    font-size: 90px;
+  }
+  #prochainement, footer {
+    font-size: 4.6em;
+  }
+  #menu {
+    margin-bottom: 17em;
+  }
+  #menu h3 {
+    font-size: 120px;
+  }
+  #menu h4 {
+    font-size: 69px;
+  }
+  #menu p {
+    font-size: 60px;
+  }
+  #menu p span {
+    font-size: 62px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 100px;
+  }
+}
+
+/* Si la taille de l'écran est de 2403 pixels ou plus, définir comme ci-dessous*/
+@media only screen and (min-width: 2403px) {
+  #menus article {
+    /*dimension des menus*/
+    width: 53em;
+    height: 64em;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+  #menus img {
+    width: 100px;
+  }
+  #menus h2 {
+    font-size: 71px;
+  }
+  #menus p {
+    font-size: 85px;
+  }
+  #menu {
+    margin-bottom: 17em;
+  }
+  #menu h3 {
+    font-size: 140px;
+  }
+  #menu h4 {
+    font-size: 82px;
+  }
+  #menu p {
+    font-size: 75px;
+  }
+  #menu p span {
+    font-size: 77px;
+    font-weight: bold;
+  }
+  #menu #footer label {
+    font-size: 110px;
+  }
+  #prochainement, footer {
+    font-size: 3.8em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
